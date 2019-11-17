@@ -180,6 +180,13 @@ public class Wezel {
         W momencie gdy nie mamy zadnych dzieci to wypisujemy siebie
         (i oznaczamy to w jakis sposob w stosie(?)) - do zastanowienia jak
 
+
+         Do pobawienia sie jak działa GIT, komendy:
+         git add nazwa_pliku
+         git add .
+         git commit -m "Nazwa commita" (do zapisania zmian do wyslania)
+         git push -u origin master (do wrzucenia zmian)
+
          */
     }
 }
