@@ -187,6 +187,8 @@ public class Wezel {
          git commit -m "Nazwa commita" (do zapisania zmian do wyslania)
          git push -u origin master (do wrzucenia zmian)
 
+        git pull (pobranie zmian z repozytorium)
+        
          */
     }
 }
