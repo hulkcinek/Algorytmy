@@ -5,7 +5,6 @@ public class Wezel {
     int wartosc;
     Wezel leweDziecko;
     Wezel praweDziecko;
-    int jestemLewymCzyPrawym; //jesli 1 --> lewe a jesli 2 --> prawe
 
     /*
     public boolean czyMamRodzenstwo(){
@@ -19,13 +18,11 @@ public class Wezel {
             // prawe dziecko
             if (praweDziecko == null)
                 praweDziecko = new Wezel();
-            praweDziecko.jestemLewymCzyPrawym = 2;
             praweDziecko.dodaj(w);
         } else if (w < wartosc) {
             // lewe dziecko
             if (leweDziecko == null)
                 leweDziecko = new Wezel();
-            leweDziecko.jestemLewymCzyPrawym = 1;
             leweDziecko.dodaj(w);
         }
     }
@@ -125,31 +122,7 @@ public class Wezel {
         }
     }
 
-    public void wypisz(int licznik) {
-        for (int i = 0; i < licznik; i++) {
-            if (licznik-i==1) {
-                if (praweDziecko != null) {
-                        System.out.print("├-");
-                }else {
-                    if (jestemLewymCzyPrawym == 2  ) {
-                        //if () {
-                            System.out.print("├-");
-                        //}
-                    }else if (jestemLewymCzyPrawym == 1) {
-                        System.out.print("└-");
-                    }
-                }
-            }else{
-                System.out.print("  ");
-            }
-        }
-        System.out.println(wartosc);
-        licznik++;
-        if(praweDziecko != null)
-            praweDziecko.wypisz(licznik);
-        if(leweDziecko != null)
-            leweDziecko.wypisz(licznik);
-    }
+
 
     public void wypiszPosortowane() {
         // wypisz lewe (rekurencyjnie)
@@ -185,10 +158,10 @@ public class Wezel {
          git add nazwa_pliku
          git add .
          git commit -m "Nazwa commita" (do zapisania zmian do wyslania)
-         git push -u origin master (do wrzucenia zmian)
+         git push -u origin master (do wrzucenia zmian)=
 
         git pull (pobranie zmian z repozytorium)
-        
+
          */
     }
 }
